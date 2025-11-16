@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Первый Сайт</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', system-ui; 
+            line-height: 1.6; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(255,255,255,0.95);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #764ba2; }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: rgba(255,255,255,0.9);
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1, h2 { 
+            text-align: center; 
+            color: #2d3748;
+        }
+        h1 { 
+            font-size: 2.5rem; 
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            margin-top: 3rem;
+        }
+        .services li {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem 0;
+            border-radius: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мой Сайт</h1>
+        <nav style="text-align: center;">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <nav style="text-align: center;">
+                <h2>Добро пожаловать!</h2>
+                <p>Современные решения для вашего бизнеса</p>
+            </nav>
+        </section>
+        
+        <section id="about">
+            <nav style="text-align: center;">
+                <h2>Обо мне</h2>
+                <p>Создаю простые решения просто для вас</p>
+            </nav>
+        </section>
+        
+        <section id="services">
+            <nav style="text-align: center;">
+                <h2>Мои услуги</h2>
+                <ul class="services">
+                    <li>Веб-разработка</li>
+                    <li>Дизайн</li>
+                    <li>Консультации</li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section id="contact">
+            <nav style="text-align: center;">
+                <h2>Контакты</h2>
+                <p>📧 info@example.com</p>
+                <p>📞 +7 (123) 456-78-90</p>
+            </nav>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 МойСайт. Все права защищены.</p>
+    </footer>
+</body>
+</html>
